@@ -8,7 +8,7 @@ app.use(express.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
   res.send("Jesus is with me");
 });
-app.get("/api/v1/weather/:city", controller);
+app.get("/api/v2/weather/:city", controller);
 app.listen(port, (err) => {
   if (err) {
     console.log(`Something went wrong`);
